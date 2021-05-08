@@ -4,7 +4,8 @@
   "description": "Web Socket, Message Queue, Web Stomp Compress Application",
   "main": "backend.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "back": "nodemon backend.js",
+    "front": "nodemon frontend/frontend.js"
   },
   "repository": {
     "type": "git",
@@ -26,11 +27,15 @@
   },
   "homepage": "https://github.com/aliirsyaadn/wsmqcompress#readme",
   "dependencies": {
+    "amqplib": "^0.7.1",
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
     "multer": "^1.4.2",
     "node-7z": "^2.1.2",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2",
+    "uuid": "^3.4.0"
   }
 }
